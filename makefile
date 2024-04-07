@@ -6,6 +6,7 @@ LBRS=$(join $(DIRS),$(patsubst %/,%.lbr,$(DIRS)))
 all: $(BINS)
 
 $(BINS): FORCE
+	ln -sf ../include $(dir $@)/include
 	$(MAKE) -C $(dir $@)
 
 $(LBRS): $(BINS)
@@ -18,6 +19,7 @@ clean: FORCE
 	rm -f fileutils.lbr
 	for DIR in $(DIRS) ; do \
 	$(MAKE) -C $$DIR clean ; \
+	rm -f $$DIR/include ; \
 	done
 
 FORCE:

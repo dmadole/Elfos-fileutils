@@ -1,0 +1,15 @@
+[submodule "sum"]
+	path = sum
+	url = https://github.com/dmadole/Elfos-sum
+[submodule "copy"]
+	path = copy
+	url = https://github.com/dmadole/Elfos-copy
+[submodule "del"]
+	path = del
+	url = https://github.com/dmadole/Elfos-del
+[submodule "dzx1"]
+	path = dzx1
+	url = https://github.com/dmadole/Elfos-dzx1
+[submodule "trim"]
+	path = trim
+	url = https://github.com/dmadole/Elfos-trim
